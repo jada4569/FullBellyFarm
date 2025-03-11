@@ -1,3 +1,7 @@
+html {
+    font-family: "Open Sans";
+}
+
 .logo {
     margin: auto;
     display: block;
@@ -51,9 +55,22 @@
 }
 
 .welcome-text4 {
-    font-family: "Open Sans";
     font-size: 16px;
     color: rgb(107, 104, 104);
+    margin-bottom: 25px;
+}
+
+.btn {
+    font-size: 14px !important;
+    font-weight: 650 !important;
+    background-color: #43e1cb !important;
+    border-color: #43e1cb !important;
+    color: #1e1d1d !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    letter-spacing: 2px !important;
 }
 
 /* Media tag sizes gotten from https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
