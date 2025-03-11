@@ -18,6 +18,10 @@
     padding-right: 25px;
 }
 
+.welcome-container {
+    padding: 2em;
+}
+
 .welcome {
     background-color: #cafef5;
     text-align: center;
@@ -34,15 +38,52 @@
 
 .welcome-text2 {
     font-family: "Special Elite";
-    font-size: 30px;
-    letter-spacing: 2px;
+    margin-bottom: 0;
+    padding: 0;
     color: #1e1d1d;
 }
 
 .welcome-text3 {
+    font-family: "Special Elite";
+    margin-top: 0;
+    padding: 0;
+    color: #1e1d1d;
+}
+
+.welcome-text4 {
     font-family: "Open Sans";
     font-size: 16px;
     color: rgb(107, 104, 104);
+}
+
+/* Media tag sizes gotten from https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .welcome-text2, .welcome-text3 {
+        font-size: 30px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .welcome-text2, .welcome-text3 {
+        font-size: 35px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .welcome-text2, .welcome-text3 {
+        font-size: 26px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .welcome-text2, .welcome-text3 {
+        font-size: 50px;
+    }
 }
 
 
