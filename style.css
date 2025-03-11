@@ -1,0 +1,32 @@
+.logo {
+    margin: auto;
+    display: block;
+    width: 25%;
+    height: 25%;
+    max-width: 225px;
+    max-height: 225px;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar a {
+    font-family: "Open Sans" !important;
+    font-weight: lighter;
+    font-size: 18 !important;
+    letter-spacing: 2px !important;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.welcome {
+    background-color: #cafef5;
+    margin-top: 10%;
+}
+
+/* 
+Other colors
+#1e1d1d
+#43e1cb
+#cbfbf3
+#85a5a4
+*/
