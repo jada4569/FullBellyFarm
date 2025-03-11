@@ -10,18 +10,41 @@
 }
 
 .navbar a {
-    font-family: "Open Sans" !important;
+    font-family: "Open Sans";
     font-weight: lighter;
-    font-size: 18 !important;
-    letter-spacing: 2px !important;
+    font-size: 16px;
+    letter-spacing: 2px;
     padding-left: 25px;
     padding-right: 25px;
 }
 
 .welcome {
     background-color: #cafef5;
-    margin-top: 10%;
+    text-align: center;
+    padding: 5%;
 }
+
+.welcome-text1 {
+    font-family: "Open Sans";
+    font-weight: lighter;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #25848a;
+}
+
+.welcome-text2 {
+    font-family: "Special Elite";
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #1e1d1d;
+}
+
+.welcome-text3 {
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: rgb(107, 104, 104);
+}
+
 
 /* 
 Other colors
