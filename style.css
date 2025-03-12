@@ -2,24 +2,13 @@ html {
     font-family: "Open Sans";
 }
 
-.logo {
-    margin: auto;
-    display: block;
-    width: 25%;
-    height: 25%;
-    max-width: 225px;
-    max-height: 225px;
-    padding: 20px;
-    text-align: center;
-}
-
 .navbar a {
     font-family: "Open Sans";
     font-weight: lighter;
     font-size: 16px;
     letter-spacing: 2px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
 }
 
 .welcome-container {
@@ -32,7 +21,7 @@ html {
     padding: 5%;
 }
 
-.welcome-text1 {
+.welcome-text1, .heading-text {
     font-family: "Open Sans";
     font-weight: lighter;
     font-size: 18px;
@@ -54,8 +43,8 @@ html {
     color: #1e1d1d;
 }
 
-.welcome-text4 {
-    font-size: 16px;
+.welcome-text4, .regular-text {
+    font-size: 18px;
     color: rgb(107, 104, 104);
     margin-bottom: 25px;
 }
@@ -73,7 +62,26 @@ html {
     letter-spacing: 2px !important;
 }
 
-/* Media tag sizes gotten from https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+.info-container {
+    background-color: #cafef5;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.about-container {
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+}
+
+.paragraph-text {
+    color: #1e1d1d;
+    font-size: 18px;
+    padding-right: 25px !important;
+}
+
+
+/* Some media tag sizes are from https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -92,12 +100,29 @@ html {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .welcome-text2, .welcome-text3 {
-        font-size: 26px;
+        font-size: 24px;
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 800px) {
+    .welcome-text2, .welcome-text3 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .welcome-text2, .welcome-text3 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .welcome-text2, .welcome-text3 {
+        font-size: 47px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
     .welcome-text2, .welcome-text3 {
         font-size: 50px;
     }
