@@ -1,14 +1,20 @@
+:root {
+    --heading-color: #25848a;
+    --button-color: #43e1cb;
+    --text-color: rgb(107, 104, 104);
+    --black-color: #1e1d1d;
+    --background: #cafef5;
+}
+
 html {
     font-family: "Open Sans";
 }
 
-.navbar a {
+#navbar a {
     font-family: "Open Sans";
     font-weight: lighter;
-    font-size: 16px;
-    letter-spacing: 2px;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    font-size: 1rem;
+    letter-spacing: 0.125rem;
 }
 
 .welcome-container {
@@ -16,7 +22,7 @@ html {
 }
 
 .welcome {
-    background-color: #cafef5;
+    background-color: var(--background);
     text-align: center;
     padding: 5%;
 }
@@ -24,115 +30,86 @@ html {
 .welcome-text1, .heading-text {
     font-family: "Open Sans";
     font-weight: lighter;
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: #25848a;
+    font-size: 1.125rem;
+    letter-spacing: 0.125rem;
+    color: var(--heading-color);
 }
 
 .welcome-text2 {
     font-family: "Special Elite";
-    margin-bottom: 0;
     padding: 0;
-    color: #1e1d1d;
+    color: var(--black-color);
+    text-wrap: balance;
 }
 
 .welcome-text3 {
-    font-family: "Special Elite";
-    margin-top: 0;
-    padding: 0;
-    color: #1e1d1d;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
-.welcome-text4, .regular-text {
-    font-size: 18px;
-    color: rgb(107, 104, 104);
-    margin-bottom: 25px;
+.welcome-text3, .regular-text {
+    font-size: 1.125rem;
+    color: var(--text-color);
 }
 
-.btn {
-    font-size: 14px !important;
-    font-weight: 650 !important;
-    background-color: #43e1cb !important;
-    border-color: #43e1cb !important;
-    color: #1e1d1d !important;
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
-    letter-spacing: 2px !important;
+.regular-text {
+    margin-bottom: 1.5rem;
 }
 
 .info-container {
-    background-color: #cafef5;
+    background-color: var(--background);
     text-align: center;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    text-wrap: balance;
 }
 
-.about-container {
-    padding-left: 35px !important;
-    padding-right: 35px !important;
+#about-container {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    text-wrap: balance;
 }
 
-.paragraph-text {
-    color: #1e1d1d;
-    font-size: 18px;
-    padding-right: 25px !important;
+#paragraph-text p {
+    color: var(--black-color);
+    font-size: 1.125rem;
+    padding-right: 1rem;
+    text-wrap: balance;
 }
 
 
-/* Some media tag sizes are from https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .welcome-text2, .welcome-text3 {
-        font-size: 30px;
+@media only screen and (max-width: 576px) {
+    .welcome-text2 {
+        font-size: 1.875rem;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .welcome-text2, .welcome-text3 {
-        font-size: 35px;
+@media only screen and (min-width: 576px) {
+    .welcome-text2 {
+        font-size: 2.25rem;
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .welcome-text2, .welcome-text3 {
-        font-size: 24px;
+    .welcome-text2 {
+        font-size: 1.5rem;
     }
 }
 
-@media only screen and (min-width: 800px) {
-    .welcome-text2, .welcome-text3 {
-        font-size: 25px;
-    }
-}
-
-@media only screen and (min-width: 1000px) {
-    .welcome-text2, .welcome-text3 {
-        font-size: 35px;
+@media only screen and (min-width: 992px) {
+    .welcome-text2 {
+        font-size: 2.25rem;
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    .welcome-text2, .welcome-text3 {
-        font-size: 47px;
+    .welcome-text2 {
+        font-size: 3rem;
     }
 }
 
 @media only screen and (min-width: 1400px) {
-    .welcome-text2, .welcome-text3 {
-        font-size: 50px;
+    .welcome-text2 {
+        font-size: 3.125rem;
     }
 }
-
-
-/* 
-Other colors
-#1e1d1d
-#43e1cb
-#cbfbf3
-#85a5a4
-*/
