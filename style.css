@@ -4,6 +4,7 @@
     --text-color: rgb(107, 104, 104);
     --black-color: #1e1d1d;
     --background: #cafef5;
+    --subheading-color: #666d6c;
 }
 
 html {
@@ -70,13 +71,24 @@ html {
     text-wrap: balance;
 }
 
-#paragraph-text p {
+.paragraph-text {
     color: var(--black-color);
     font-size: 1.125rem;
     padding-right: 1rem;
     text-wrap: balance;
 }
 
+.subheading-text {
+    color: var(--subheading-color);
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-wrap: balance;
+}
+
+.socials {
+    width: 2rem;
+    height: 2rem;
+}
 
 @media only screen and (max-width: 576px) {
     .welcome-text2 {
