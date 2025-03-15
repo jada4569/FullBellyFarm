@@ -121,17 +121,7 @@ html {
     color: white;
 }
 
-.donate-paypal {
-    width: auto;
-    height: 2rem;
-}
-
-.donate-venmo {
-    width: auto;
-    height: 2rem;
-}
-
-.donate-zelle {
+.donate {
     width: auto;
     height: 2rem;
 }
