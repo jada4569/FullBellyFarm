@@ -9,6 +9,7 @@
 
 html {
     font-family: "Open Sans";
+    overflow-x: hidden;
 }
 
 #navbar a {
@@ -133,6 +134,24 @@ html {
 .donate-zelle {
     width: auto;
     height: 2rem;
+}
+
+footer {
+    font-size: 0.75rem;
+}
+
+.footer1 {
+    color: var(--black-color);
+    font-weight: bold;
+}
+
+.mail-to a {
+    color: var(--heading-color);
+    text-decoration: none;
+}
+
+.copyright {
+    color: var(--subheading-color);
 }
 
 @media only screen and (max-width: 576px) {
