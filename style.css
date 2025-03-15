@@ -90,6 +90,51 @@ html {
     height: 2rem;
 }
 
+.support-us {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("/img/support.png");
+    background-size: cover;
+    background-position: center;
+    height: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay-text {
+    font-size: 1.5rem;
+    color: white;
+    text-wrap: balance;
+    text-shadow: 
+            -1px -1px 0 var(--black-color),
+            1px -1px 0 var(--black-color),
+            1px 1px 0 var(--black-color),
+            -1px 1px 0 var(--black-color);
+}
+
+.overlay-title {
+    font-family: "Special Elite";
+    font-size: 2rem;
+    color: white;
+}
+
+.donate-paypal {
+    width: auto;
+    height: 2rem;
+}
+
+.donate-venmo {
+    width: auto;
+    height: 2rem;
+}
+
+.donate-zelle {
+    width: auto;
+    height: 2rem;
+}
+
 @media only screen and (max-width: 576px) {
     .welcome-text2 {
         font-size: 1.875rem;
