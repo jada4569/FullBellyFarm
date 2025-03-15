@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    <!-- Head -->
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special Elite">
-        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/logo.png" type="image/png">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <title>Full Belly Farm</title>
+        <style>
+          .btn {
+            font-size: 0.875rem;
+            font-weight: 650;
+            background-color: var(--button-color);
+            border-color: var(--button-color);
+            color: var(--black-color);
+            padding-left: 1.625rem;
+            padding-right: 1.625rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            letter-spacing: 0.125rem;
+          }
+
+          .btn:hover {
+            background-color: #41bcab;
+          }
+        </style>
     </head>
+
+    <!-- Body -->
     <body>
-        <!-- TODO: Figure out how to make the navbar button go on the same level as the logo image -->
-        <!-- <a href="index.html">
-            <img class="logo" alt="Full Belly Farm Logo" src="img/logo.jpg" />
-        </a> -->
 
         <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img src="/img/logo.png" alt="FBF Logo" width="30" height="30">
@@ -32,65 +51,258 @@
                       <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="sponsor.html">SPONSOR</a>
+                      <a class="nav-link" href="#about">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="about-us.html">ABOUT US</a>
+                      <a class="nav-link" href="#support">SUPPORT</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="volunteer.html">VOLUNTEER</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="support.html">SUPPORT</a>
+                      <a class="nav-link" href="#contact">CONTACT</a>
                     </li>
                   </ul>
               </div>
             </div>
           </nav>
 
-        <!-- Welcome -->
-        <div class="container welcome-container">
-            <div class="row g-0">
-                <div class="col-md-8">
-                    <a class="picture welcome-img"><img src="/img/welcome.jpg" class="img-fluid"></a>
-                </div>
-                <div class="col-md-4 welcome">
-                    <p class="text-center welcome-text1">WELCOME</p>
-                    <p class="text-center welcome-text2">Full Belly Farm</p>
-                    <p class="text-center welcome-text3">Animal Sanctuary</p>
-                    <p class="text-center welcome-text4">Where all animals are welcome</p>
-                    <button type="button" class="btn btn-primary">Get Involved</button>
+        <!-- Website Main Content -->
+        <main>
+
+          <!-- Welcome -->
+          <section>
+            <div class="container welcome-container">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <a class="picture welcome-img"><img src="/img/welcome.jpg" class="img-fluid" alt="Full Belly Farm residents enjoying a sunny summer day"></a>
+                    </div>
+                    <div class="col-md-4 welcome">
+                        <p class="text-center welcome-text1">WELCOME</p>
+                        <p class="text-center welcome-text2">Full Belly Farm Animal Sanctuary</p>
+                        <p class="text-center welcome-text3">Where all animals are welcome</p>
+                        <a href="#support" class="btn rounded-0">GET INVOLVED</a>
+                    </div>
                 </div>
             </div>
+          </section>
 
+          <!-- Add some space -->
+          <br>
+          <br>
 
+          <!-- Meet Our Animals -->
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <p class="heading-text">OUR RESIDENTS</p>
+                </div>
+              </div>
+              <div class="container info-container">
+                <div class="row">
+                  <div class="col">
+                    <p class="text-center regular-text">Get to know our residents and learn about what makes farm animals special.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <a class="btn rounded-0">MEET OUR ANIMALS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
+          <!-- Add some space -->
+          <br>
+          <br>
+          <br>
 
+          <!-- Gallery #1-->
+          <section>
+            <div class="container-fluid">
+              <div class="row g-0">
+                <div class="col-3">
+                  <img src="img/gallery-1.jpg" class="img-fluid" alt="A goat lounging on a teal plastic pool">
+                </div>
+                <div class="col-3">
+                  <img src="img/gallery-2.jpg" class="img-fluid" alt="A dark pig enjoying a pumpkin">
+                </div>
+                <div class="col-3">
+                  <img src="img/gallery-3.jpg" class="img-fluid" alt="Two sheep looking at the camera">
+                </div>
+                <div class="col-3">
+                  <img src="img/gallery-4.jpg" class="img-fluid" alt="Two pigs on clover grass">
+                </div>
+              </div>
+            </div>
+          </section>
 
-        </div>
+          <!-- Add some space -->
+          <br>
+          <br>
+          <br>
 
-        <!-- Welcome -->
-        <div class="container meet-our-animals"></div>
+          <!-- About Us -->
+          <div class="container" id="about">
+            <div class="row">
+              <div class="col">
+                <p class="heading-text">ABOUT US</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-7">
+                <p class="paragraph-text">Amber Jackson, Full Belly Farm Amimal Sanctuary's founder, spent years rescuing and fostering shelter dogs and cats. In 2014, a 
+                  lifelong dream of raising a miniature pig became a reality. Petunia the pig stole Amber's heart, and this was the start of Full Belly 
+                  Farm Animal Sanctuary!</p>
+                <p class="paragraph-text">Since 2014, the sanctuary has grown to be home to 27 mini pigs, 4 goats, 2 sheep, a donkey, 4 dogs, chickens, ducks, a 
+                  rooster, and a turkey! Many of our rescued or fostered animal friends have since found their forever homes all over the country.</p>
+              </div>
+              <div class="col-md-5 info-container" id="about-container">
+                <p class="text-center regular-text">Full Belly Farm Animal Sanctuary is a 501c3 nonprofit animal rescue located in Lexington, AL. 
+                  Our mission is to rescue and provide sanctuary for unwanted animals, with the focus on miniature pigs, and advocate for spaying 
+                  and neutering.</p>
+                <!-- TODO: Add a modal with information about Amber -->
+                <a class="btn rounded-0">MORE ABOUT AMBER</a>
+              </div>
+            </div>
+          </div>
 
-        <!-- Gallery -->
-        <div class="container gallery"></div>
+          <!-- Add some space -->
+          <br>
+          <br>
+          <br>
 
-        <!-- Upcoming Events -->
-        <div class="container upcoming-events"></div>
+          <!-- Gallery #2 -->
+          <section>
+            <div class="container-fluid">
+              <div class="row g-0">
+                <div class="col-3">
+                  <img src="img/gallery-5.jpg" class="img-fluid" alt="Three pigs enjoying each other's company">
+                </div>
+                <div class="col-3">
+                  <img src="img/gallery-6.jpg" class="img-fluid" alt="A donkey looking at the camera with a pig in the background">
+                </div>
+                <div class="col-3">
+                  <img src="img/gallery-7.jpg" class="img-fluid" alt="A larger chicken and a smaller chick with another chicken in the background">
+                </div>
+                <div class="col-3">
+                  <img src="img/gallery-8.jpg" class="img-fluid" alt="A young goat looking at the camera">
+                </div>
+              </div>
+            </div>
+          </section>
 
-        <!-- Help Out -->
-        <div class="container help-out"></div>
+          <!-- Add some space -->
+          <br>
+          <br>
+          <br>
+          
+          <!-- Support Us -->
+          <section>
+            <div class="container" id="support">
+              <div class="row">
+                <div class="col">
+                  <p class="heading-text">SUPPORT US</p>
+                </div>
+                <div class="row">
+                  <div class="col-md-7">
+                    <p class="subheading-text">Volunteer</p>
+                    <p class="paragraph-text">Please contact us if you are able to help with:</p>
+                    <ul>
+                      <li class="paragraph-text">Animal care (feeding, filling up water containers, replacing bedding in barns)</li>
+                      <li class="paragraph-text">Projects on the farm such as building and maintaining barns</li>
+                      <li class="paragraph-text">Applying for nonprofit grants</li>
+                      <li class="paragraph-text">Bush hogging the pasture</li>
+                    </ul>
+                      <p class="subheading-text">Donate</p>
+                      <p class="paragraph-text">Every donation helps! Food, bedding, spays/neuters, and operation costs 
+                        add up quickly with 50+ animals. One-time payments and monthly subscriptions are greatly appreciated. 
+                        To donate physical items or food, please see our Amazon wishlist or use the contact form below and 
+                        we will send you a list of what we are in need of at the time.</p>
+                  </div>
+                  <div class="col-md-5 info-container">
+                    <p class="text-center regular-text">Follow us on Facebook and Instagram to keep up with life on the farm,
+                      see any events we have going on, and support our work! Interact with our posts to boost our profile to others.</p>
+                    <br>
+                    <a class="btn rounded-0" href="https://www.facebook.com/profile.php?id=100069621412003" target="_blank"><img class="socials" src="img/Facebook_Logo_Primary.png" alt="Facebook Logo"> Follow us on Facebook</a>
+                    <br>
+                    <br>
+                    <br>
+                    <a class="btn rounded-0" href="https://www.instagram.com/fullbellyfarm/" target="_blank"><img class="socials" src="img/Instagram_Glyph_Gradient.png" alt="Instagram Logo"> Follow us on Instagram</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container-fluid support-us">
+              <div class="row g-0">
+                <div class="col-12">
+                  <div class="overlay-text overlay-title">Please Support Us</div>
+                  <br>
+                  <div class="overlay-text">Your contribution will allow us to support the animals and continue our rescuing 
+                    efforts. We are very grateful for your generosity.</div>
+                  <br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a class="btn rounded-0" href="https://paypal.com/US/fundraiser/charity/4362855" target="_blank"><img class="donate" src="/img/Paypal.png"></a>
+                </div>
+                <div class="col">
+                  <a class="btn rounded-0" href="https://venmo.com/u/Fullbellyfarmanimalsanctuary" target="_blank"><img class="donate" src="/img/Venmo.png"></a>
+                </div>
+                <div class="col">
+                  <a class="btn rounded-0" href="https://www.amazon.com/hz/wishlist/ls/34ND0K3TFR2AD/ref=hz_ls_biz_ex" target="_blank"><img class="donate" src="/img/amazon.png"></a>
+                </div>
+              </div>
+            </div>
+          </section>
 
-        <!-- Support Us -->
-        <div class="container support-us"></div>
+          <!-- Add some space -->
+          <br>
+          <br>
+          <br>
+          
+          <!-- Contact Us -->
+          <section>
+            <div class="container" id="contact">
+              <p class="heading-text">CONTACT US</p>
+              <form>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name">
+                </div>
+                <br>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <br>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="5"></textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                  <button type="submit" class="form-control btn rounded-0">Submit</button>
+                </div>
+              </form>
+            </div>
+          </section>
 
-        <!-- Visit Us -->
-        <div class="container visit-us"></div>
-
-        <!-- Email Sign Up -->
-        <div class="container email-sign-up"></div>
+          <!-- Add some space -->
+          <br>
+          <br>
+          <br>
+          
+        </main>
 
         <!-- Footer -->
-        <footer></footer>
+        <footer class="bg-light">
+          <div class="text-center p-2 footer1">FULL BELLY FARM SANCTUARY</div>
+          <div class="text-center p-2 mail-to"><a href="mailto:fullybellyfarmsanctuary@gmail.com">FULLBELLYFARMSANCTUARY@GMAIL.COM</a></div>
+          <div class="text-center p-2 copyright">Copyright © 2023 Full Belly Farm - All Rights Reserved.</div>
+        </footer>
     </body>
 </html>

@@ -1,21 +1,22 @@
-.logo {
-    margin: auto;
-    display: block;
-    width: 25%;
-    height: 25%;
-    max-width: 225px;
-    max-height: 225px;
-    padding: 20px;
-    text-align: center;
+:root {
+    --heading-color: #25848a;
+    --button-color: #43e1cb;
+    --text-color: rgb(107, 104, 104);
+    --black-color: #1e1d1d;
+    --background: #cafef5;
+    --subheading-color: #666d6c;
 }
 
-.navbar a {
+html {
+    font-family: "Open Sans";
+    overflow-x: hidden;
+}
+
+#navbar a {
     font-family: "Open Sans";
     font-weight: lighter;
-    font-size: 16px;
-    letter-spacing: 2px;
-    padding-left: 25px;
-    padding-right: 25px;
+    font-size: 1rem;
+    letter-spacing: 0.125rem;
 }
 
 .welcome-container {
@@ -23,74 +24,158 @@
 }
 
 .welcome {
-    background-color: #cafef5;
+    background-color: var(--background);
     text-align: center;
     padding: 5%;
 }
 
-.welcome-text1 {
+.welcome-text1, .heading-text {
     font-family: "Open Sans";
     font-weight: lighter;
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: #25848a;
+    font-size: 1.125rem;
+    letter-spacing: 0.125rem;
+    color: var(--heading-color);
 }
 
 .welcome-text2 {
     font-family: "Special Elite";
-    margin-bottom: 0;
     padding: 0;
-    color: #1e1d1d;
+    color: var(--black-color);
+    text-wrap: balance;
 }
 
 .welcome-text3 {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.welcome-text3, .regular-text {
+    font-size: 1.125rem;
+    color: var(--text-color);
+}
+
+.regular-text {
+    margin-bottom: 1.5rem;
+}
+
+.info-container {
+    background-color: var(--background);
+    text-align: center;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    text-wrap: balance;
+}
+
+#about-container {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    text-wrap: balance;
+}
+
+.paragraph-text {
+    color: var(--black-color);
+    font-size: 1.125rem;
+    padding-right: 1rem;
+    text-wrap: balance;
+}
+
+.subheading-text {
+    color: var(--subheading-color);
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-wrap: balance;
+}
+
+.socials {
+    width: 2rem;
+    height: 2rem;
+}
+
+.support-us {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("/img/support.png");
+    background-size: cover;
+    background-position: center;
+    height: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay-text {
+    font-size: 1.5rem;
+    color: white;
+    text-wrap: balance;
+    text-shadow: 
+            -1px -1px 0 var(--black-color),
+            1px -1px 0 var(--black-color),
+            1px 1px 0 var(--black-color),
+            -1px 1px 0 var(--black-color);
+}
+
+.overlay-title {
     font-family: "Special Elite";
-    margin-top: 0;
-    padding: 0;
-    color: #1e1d1d;
+    font-size: 2rem;
+    color: white;
 }
 
-.welcome-text4 {
-    font-family: "Open Sans";
-    font-size: 16px;
-    color: rgb(107, 104, 104);
+.donate {
+    width: auto;
+    height: 2rem;
 }
 
-/* Media tag sizes gotten from https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+footer {
+    font-size: 0.75rem;
+}
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .welcome-text2, .welcome-text3 {
-        font-size: 30px;
+.footer1 {
+    color: var(--black-color);
+    font-weight: bold;
+}
+
+.mail-to a {
+    color: var(--heading-color);
+    text-decoration: none;
+}
+
+.copyright {
+    color: var(--subheading-color);
+}
+
+@media only screen and (max-width: 576px) {
+    .welcome-text2 {
+        font-size: 1.875rem;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .welcome-text2, .welcome-text3 {
-        font-size: 35px;
+@media only screen and (min-width: 576px) {
+    .welcome-text2 {
+        font-size: 2.25rem;
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .welcome-text2, .welcome-text3 {
-        font-size: 26px;
+    .welcome-text2 {
+        font-size: 1.5rem;
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .welcome-text2, .welcome-text3 {
-        font-size: 50px;
+    .welcome-text2 {
+        font-size: 2.25rem;
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    .welcome-text2 {
+        font-size: 3rem;
+    }
+}
 
-/* 
-Other colors
-#1e1d1d
-#43e1cb
-#cbfbf3
-#85a5a4
-*/
+@media only screen and (min-width: 1400px) {
+    .welcome-text2 {
+        font-size: 3.125rem;
+    }
+}
