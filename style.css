@@ -93,7 +93,7 @@ html {
 
 .support-us {
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("/img/support.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("img/support.png");
     background-size: cover;
     background-position: center;
     height: 18.75rem;
