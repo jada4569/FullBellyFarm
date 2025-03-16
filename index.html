@@ -112,7 +112,7 @@
             <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Our Animal Friends</h5>
+                  <h5 class="modal-title" id="residentsModalLabel">Our Animal Friends</h5>
                 </div>
                 <div class="modal-body">
                   <div class="row">
@@ -188,7 +188,7 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -241,8 +241,53 @@
                 <p class="text-center regular-text">Full Belly Farm Animal Sanctuary is a 501c3 nonprofit animal rescue located in Lexington, AL. 
                   Our mission is to rescue and provide sanctuary for unwanted animals, with the focus on miniature pigs, and advocate for spaying 
                   and neutering.</p>
-                <!-- TODO: Add a modal with information about Amber -->
-                <a class="btn rounded-0">MORE ABOUT AMBER</a>
+                <button type="button" class="btn rounded-0" data-bs-toggle="modal" data-bs-target="#amberModal">MORE ABOUT AMBER</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Amber Modal -->
+          <div class="modal fade" id="amberModal" tabindex="-1" role="dialog" aria-labelledby="amberModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="amberModalLabel">About Amber Jackson</h5>
+                </div>
+                <div class="modal-body d-flex flex-column align-items-center">
+                  <div class="row">
+                    <div class="col">
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/amber.jpg" alt="Amber with Smokey Joe the donkey">
+                        <div class="card-body">
+                          <h5 class="card-title">Amber Jackson, Founder and CEO </h5>
+                          <p class="card-text">I am a Licensed Veterinary Technician with a passion for rescuing animals. I started Full Belly Farm 
+                            Animal Sanctuary to give unwanted, neglected and abandoned animals a home.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p></p>
+                  <p></p>
+                  <div class="row">
+                    <div class="col">
+                      <div class="info-container">
+                        <p class="heading-text">Giving Animals a Home</p>
+                        <p class="text-center regular-text">Full Belly Farm was founded by Amber Jackson, a licensed veterinary technician with a 
+                          passion for animal welfare and rescue. As a child, Amber gravitated to animals of all kinds, and they were drawn to her 
+                          as well. She always said she wanted to be a veterinarian or a zookeeper. After graduating high school, Amber earned a 
+                          Business degree from NWSCC and then attended Jefferson State Community College, earning a Veterinary Technology degree 
+                          in 2008 and becoming licensed in Alabama.<br><br>She has worked at local veterinary hospitals in the Shoals area, as well as the local animal shelter, since 2006. After 
+                          approximately 15 years of rescuing animals and the same amount of time living a vegetarian/vegan lifestyle, the animal 
+                          sanctuary became official in 2020, once relocating to a 6-acre farm nestled 20 minutes from Florence, AL. The daily farm 
+                          chores are solely her responsibility and since the animals’ individual care and attention is the top priority, the amount 
+                          of animals the sanctuary can take in is limited. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
           </div>
