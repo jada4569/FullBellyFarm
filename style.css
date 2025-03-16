@@ -91,6 +91,7 @@ html {
     background-size: cover;
     background-position: center;
     height: 18.75rem;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
