@@ -144,7 +144,15 @@ footer {
     }
 
     .donate {
-        height: .5rem;
+        height: 1rem;
+    }
+
+    .amazon {
+        height: 0.6rem;
+    }
+
+    .venmo {
+        height: 0.4rem;
     }
 
     .overlay-text {
